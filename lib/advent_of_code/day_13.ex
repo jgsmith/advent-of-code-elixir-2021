@@ -1,7 +1,6 @@
 defmodule AdventOfCode.Day13 do
   def part1(args) do
     {points, [first_instruction | _] = instructions} = parse_input(args)
-    IO.inspect(instructions)
 
     points
     |> run_instructions([first_instruction])
